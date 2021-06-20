@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="socket.io/socket.io.js"></script>
+    <script async src="main.js"></script>
+</head>
+<body>
+    <h1>Welcome to my Eurovision Song Contest Chat!</h1>
+    <div id="radio-container">
+        <iframe id="radio" src="https://open.spotify.com/embed/playlist/5iyfPnZqWnOiob2jxOnXLU" allow="encrypted-media"></iframe>
+    </div>
+    <main>
+
+        
+        <ul id = "user-channel-list">
+            <li id = "switch-btn" class = "btn btn-blue" onclick = "switchHandler()">
+                Users / Channels
+            </li>
+            <ul id = "active-list">
+            </ul>
+        </ul>
+        <section id="chat-view">
+            <ul id="chat-box"></ul>
+            <section>
+                <input id = 'msg-box' placeholder="Let's type some message">
+                <button id = "send-btn" onclick="clickHandler()">Send</button>
+            </section>
+        </section>
+        
+    </main>
+</body>
+</html>
